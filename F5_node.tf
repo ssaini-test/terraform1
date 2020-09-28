@@ -9,4 +9,5 @@ resource "bigip_ltm_node" "node" {
   fqdn {
     address_family = "ipv4"
     interval       = "3000"
+      }
   }
