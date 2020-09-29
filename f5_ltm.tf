@@ -1,9 +1,15 @@
 variable "address" {
-  type = string
+  default = "1.1.1.1"
 }
 variable "username" {
-  type = string
+  default = "admin"
 }
 variable "password" {
-  type = string
+  default = ""
+}
+
+provider "bigip" {
+  address = var.address
+  username = var.username
+  password = var.password
 }
